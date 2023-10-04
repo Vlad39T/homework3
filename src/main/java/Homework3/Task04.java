@@ -1,3 +1,5 @@
+package Homework3;
+
 public class Task04 {
 
 //Дана точка на площині задана координатами x та y. Визначіть і
