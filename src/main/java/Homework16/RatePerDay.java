@@ -23,6 +23,4 @@ public class RatePerDay extends Employee {
         double finish =this.count - result;
         return finish ;
     }
-
-
 }
