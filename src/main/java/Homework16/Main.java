@@ -16,8 +16,8 @@ public class Main {
         System.out.print(ass.getName() + "     |   Відрядна  |     " + ass.getTax() + "  |    " + ass.sum() + "      |     " +
          ass.payable()+"      |");
         System.out.println(gorizont());
-        System.out.print("Разом        |                                        |      "+ (rpd.sum()+rph.sum()+ ass.sum())+
-                 "      |");
+        System.out.print("Разом        |                                        |     "+ (rpd.sum()+rph.sum()+ ass.sum())+
+                 "       |");
         System.out.println(gorizont());
     }
 
