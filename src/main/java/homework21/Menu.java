@@ -41,7 +41,6 @@ public class Menu {
                     boolean repeatOperation = true;
                     while (repeatOperation) {
                         try {
-                            //обрати операцію
                             System.out.println("Оберіть операцію");
                             System.out.println("1 - Увімкнути");
                             System.out.println("2 - Вимкнути");
