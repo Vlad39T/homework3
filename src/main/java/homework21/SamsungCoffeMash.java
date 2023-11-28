@@ -10,4 +10,10 @@ public class SamsungCoffeMash extends CoffeeMachine {
     public SamsungCoffeMash(int maxWaterLevel, int maxCoffeeLevel, int maxGarbageLevel) {
         super(maxWaterLevel, maxCoffeeLevel, maxGarbageLevel);
     }
+    @Override
+    public void addWater() {
+    }
+    @Override
+    public void addCoffee() {
+    }
 }

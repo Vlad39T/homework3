@@ -1,6 +1,6 @@
 package homework21;
 
-public class CoffeeMachine implements CoffeeMashInterface {
+public abstract class CoffeeMachine implements CoffeeMashInterface {
     private int maxWaterLevel;
     private int maxCoffeeLevel;
     private int maxGarbageLevel;
@@ -9,9 +9,21 @@ public class CoffeeMachine implements CoffeeMashInterface {
     private int currentCoffeeLevel;
     private int currentGarbageLevel;
 
-
-    public CoffeeMachine() {
+    protected CoffeeMachine() {
     }
+
+    public boolean checkWaterLevel(int currentWaterLevel) {
+        return this.currentWaterLevel > 0;
+    }
+
+    public boolean checkCoffeeLevel(int currentCoffeeLevel) {
+        return currentCoffeeLevel > 0;
+    }
+
+    public boolean checkGarbageLevel() {
+        return currentGarbageLevel > 0;
+    }
+
 
     public CoffeeMachine(int maxWaterLevel, int maxCoffeeLevel, int maxGarbageLevel) {
         this.maxWaterLevel = maxWaterLevel;
@@ -29,14 +41,29 @@ public class CoffeeMachine implements CoffeeMashInterface {
 
     }
 
+
     @Override
     public void makeEspresso() {
-
+        if(currentWaterLevel<=22) {
+            System.out.println("Відсутня вода");
+        }
+        if(currentCoffeeLevel<=30) {
+            System.out.println("Відсутня кава");
+        }
+        currentCoffeeLevel -= 22;
+        currentWaterLevel -= 30;
     }
 
     @Override
     public void makeAmericano() {
-
+        if(currentWaterLevel<=22) {
+            System.out.println("Відсутня вода");
+        }
+        if(currentCoffeeLevel<=100) {
+            System.out.println("Відсутня кава");
+        }
+        currentCoffeeLevel -= 22;
+        currentWaterLevel -= 100;
     }
 
     @Override
@@ -45,18 +72,26 @@ public class CoffeeMachine implements CoffeeMashInterface {
     }
 
     @Override
-    public void addCoffee(int amount) {
-        if (currentCoffeeLevel + amount > maxCoffeeLevel) {
-            System.out.println("ПОМИЛКА: Забагато кави");
-        } else {
-            currentCoffeeLevel += amount;
-            System.out.println("Кава додана успішно");
+    public void addCoffee(int quantity){
+        if (currentCoffeeLevel + quantity<= maxCoffeeLevel){
+            currentCoffeeLevel+=quantity;
+        }else{
+            System.out.println("Додано забагато кави");
         }
     }
 
     @Override
-    public void addWater(int amount) {
+    public void addWater(int quantity){
+        if (currentWaterLevel + quantity<= maxWaterLevel){
+            currentWaterLevel+=quantity;
+        }else{
+            System.out.println("Додано забагато води");
+        }
     }
+
+    public abstract void addWater();
+
+    public abstract void addCoffee();
 }
 
 
