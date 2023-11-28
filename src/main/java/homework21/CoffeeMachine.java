@@ -72,9 +72,9 @@ public abstract class CoffeeMachine implements CoffeeMashInterface {
     }
 
     @Override
-    public void addCoffee(int quantity){
-        if (currentCoffeeLevel + quantity<= maxCoffeeLevel){
-            currentCoffeeLevel+=quantity;
+    public void addCoffee(int amount){
+        if (currentCoffeeLevel + amount<= maxCoffeeLevel){
+            currentCoffeeLevel+=amount;
         }else{
             System.out.println("Додано забагато кави");
         }
