@@ -13,14 +13,16 @@
     display: block;
 }
 
-.cards:hover {
+.card:hover {
     transform: scale(1.1);
+
 }
 
 hr {
     height: 2px;
 
 }
+
 
 .one {
 

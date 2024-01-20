@@ -1,0 +1,47 @@
+body {
+    background-image: url("https://img3.akspic.ru/previews/4/5/4/2/22454/22454-oblako-pastbishhe-nebo-lug-ekosistema-550x310.jpg");
+    background-size:cover ;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+.menu {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    border: 2px solid rosybrown;
+    font-size: 40px;
+    font-family: Pristina, serif;
+    padding: 20px;
+    width: 600px;
+    height: auto;
+    background-color: #5f6b35;
+}
+
+.cat {
+    margin: 10px;
+    background-color: #e15c44;
+}
+
+.dog {
+    margin: 10px;
+    background-color: #d7913c;
+}
+
+.hamster {
+    margin: 10px;
+    background-color: #b55b82;
+}
+.cat:hover{
+    box-shadow: 6px 5px 5px 0px rgba(58,186,68,0.59);
+}
+.dog:hover{
+    box-shadow: 6px 5px 5px 0px rgba(58,186,68,0.59);
+}
+.hamster:hover{
+    box-shadow: 6px 5px 5px 0px rgba(58,186,68,0.59);
+}
