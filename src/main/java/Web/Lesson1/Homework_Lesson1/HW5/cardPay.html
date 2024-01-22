@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<form>
+    <div class="block">
+        <div>
+            <h4 class="info">CREDIT CARD DETAILS </h4>
+            <label for="card">
+                <span class="infoCard">Card number</span><br>
+                <input type="text" name="Bcard" id="card" pattern="([2-6]([0-9]{3}) ?)(([0-9]{4} ?){3})"
+                       placeholder="1234 5678 9012 3456" required>
+            </label>
+            <label for="name">
+                <span class="infoName">Name on card</span><br>
+                <input type="text" name="name" id="name" placeholder="Name Surname" required>
+            </label>
+            <div class="date">
+                <label for="month">
+                    <span class="infoName">Expiry date</span><br>
+                    <input type="text" name="month" id="month" pattern="(0[1-9]|1[0-2])" placeholder="month" required>
+                </label>
+                <label for="year">
+                    <br>
+                    <input type="text" name="year" id="year" pattern="([0-9]{2})" placeholder="year" required>
+                </label>
+                <label for="CVV">
+                    <span class="infoCVV">Expiry date</span><br>
+                    <br>
+                    <input type="password" name="CVV" id="CVV"   pattern="[0-9]{3}" placeholder="CVV"  required>
+                </label>
+            </div>
+        </div>
+        <input type="submit" id="sub" value="Checkout" >
+</form>
+</div>
+</body>
+</html>

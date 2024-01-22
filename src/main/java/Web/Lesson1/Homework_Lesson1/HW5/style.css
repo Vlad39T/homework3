@@ -1,0 +1,127 @@
+body {
+    background-image: url("166501-mikael_gustafsson_malenkaya_pamyat-oblako-rastenie-atmosfera-voda-7680x4320.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.block {
+    font-family: Calibri, serif;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 20px 40px;
+    margin-top: 200px;
+    text-align: center;
+    backdrop-filter: blur(8px);
+    width: 400px;
+    height: 250px;
+    background-color: rgba(35, 181, 185, 0.2);
+    border-radius: 20px
+}
+
+.info {
+    display: block;
+    color: white;
+    font-size: 20px;
+    margin-top: 0px;
+
+}
+
+#card {
+    background: rgba(77, 159, 182, 0.5);
+    border: none;
+    border-bottom: 1px solid;
+    margin-bottom: 10px;
+    margin-left: -210px;
+    backdrop-filter: blur(3px);
+}
+
+#month {
+    background: rgba(77, 159, 182, 0.5);
+    border: none;
+    border-bottom: 1px solid;
+    margin-bottom: 10px;
+    margin-left: -20px;
+    backdrop-filter: blur(3px);
+    width: 40px;
+}
+
+#year {
+    background: rgba(77, 159, 182, 0.5);
+    border: none;
+    border-bottom: 1px solid;
+    margin-top: 14px;
+    margin-bottom: 10px;
+    margin-left: -30px;
+    backdrop-filter: blur(3px);
+    width: 40px;
+}
+.date{
+    display: flex;
+}
+
+.infoCard {
+    display: block;
+    font-size: 18px;
+    margin: -10px auto -20px 20px;
+    text-align: left;
+    color: #6c6a6a;
+}
+
+#name {
+    background: rgba(77, 159, 182, 0.5);
+    border: none;
+    border-bottom: 1px solid;
+    backdrop-filter: blur(3px);
+    margin-bottom: 10px;
+    margin-left: -210px;
+}
+
+.infoName {
+    display: block;
+    font-size: 18px;
+    margin: 10px auto -20px 20px;
+    text-align: left;
+    color: #6c6a6a;
+}
+#CVV{
+    background: rgba(77, 159, 182, 0.5);
+    border: none;
+    border-bottom: 1px solid;
+    margin-top: 0;
+    margin-bottom: 20px;
+    margin-left: 12px;
+    backdrop-filter: blur(3px);
+    width: 40px;
+}
+.infoCVV{
+    display: block;
+    font-size: 18px;
+    margin: 11px auto -40px 50px;
+    text-align: left;
+    color: #6c6a6a;
+}
+#sub{
+    padding: 5px 10px;
+    text-transform: uppercase;
+    border-radius: 8px;
+    font-size: 17px;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.7);
+    text-shadow: none;
+    background: transparent;
+    cursor: pointer;
+    box-shadow: transparent;
+    border: 1px solid #ffffff80;
+    transition: 0.5s ease;
+    user-select: none;
+}
+#sub:hover{
+    /*box-shadow: 7px 9px 10px -1px rgba(79,117,116,1);*/
+    color: #ffffff;
+    background: #008cff;
+    border: 1px solid #008cff;
+    text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff;
+    box-shadow: 0 0 5px #008cff, 0 0 20px #008cff, 0 0 50px #008cff,
+    0 0 100px #008cff;
+}
