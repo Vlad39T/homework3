@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // 4. Напишіть функцію, яка приймає довжину
+    // та ширину прямокутника і обчислює його площу.
+    //     Якщо у функцію передали 1 параметр,
+    //     вона вираховує площу квадрата.
+    function plosha(a,b) {
+        if (arguments.length === 2) {
+            let result = "Площа прямокутника = " + a * b;
+            document.write(result + "<br>");
+            console.log(result);
+        } else if (arguments.length === 1) {
+            let result = "Площа квадрата = " + a * a;
+            document.write(result + "<br>");
+            console.log(result);
+        } else {
+            console.log("Введені неправильні дані");
+        }
+    }
+
+    plosha(6, 10);
+    plosha(5);
+    // 6. Напишіть функцію, яка приймає мінімальне і максимальне
+    // значення для діапазону і виводить ті числа з діапазону, які
+    // є досконалими. Використовуйте написану раніше функцію,
+    //     щоб перевірити число на досконалість.
+
+
+    function dosc(min, max) {
+        let result = [];
+        for (let i = min; i <= max; i++) {
+            sum=0;
+            for (let n = 1; n <= i/2; n++) {
+                if (i % n === 0) sum += n;
+            }
+            if (i === sum) result.push(i);
+        }
+        return result;
+    }
+
+    console.log(dosc(1, 100));
+</script>
+</body>
+</html>
