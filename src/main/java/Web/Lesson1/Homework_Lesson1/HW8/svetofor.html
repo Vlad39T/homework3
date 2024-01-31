@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body {
+            background-color: #466046;
+        }
+
+        .ww {
+            border: 2px solid silver;
+            height: 50px;
+            width: 145px;
+            border-radius: 10px;
+        }
+
+        .sw {
+            margin-left: 400px;
+            margin-top: 200px;
+            background-color: #63b935;
+            width: 200px;
+            padding: 20px;
+            display: flex;
+        }
+
+        #one, #two, #three {
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            margin: 10px 5px;
+            border: none;
+        }
+
+        #click {
+            margin-left: 10px;
+            border-radius: 20%;
+        }
+    </style>
+</head>
+<body>
+<div class="sw">
+    <div class="ww">
+        <button id="one"></button>
+        <button id="two"></button>
+        <button id="three"></button>
+    </div>
+    <button id="click" onclick="butColor()">NEXT</button>
+</div>
+<script>
+    // let color = '#FF0000';
+
+let color ='green';
+    function butColor() {
+
+        document.getElementById('one').style.backgroundColor = '#898989';
+        document.getElementById('two').style.backgroundColor = '#898989';
+        document.getElementById('three').style.backgroundColor = '#898989';
+        if(color==="green"){
+            document.getElementById('one').style.backgroundColor = 'green';
+            color="orange";
+        }else if (color==="orange"){
+            document.getElementById('two').style.backgroundColor = 'orange';
+            color="red";
+        }else {
+            document.getElementById('three').style.backgroundColor = 'red';
+            color="green"
+        }
+
+    }
+</script>
+</body>
+</html>
