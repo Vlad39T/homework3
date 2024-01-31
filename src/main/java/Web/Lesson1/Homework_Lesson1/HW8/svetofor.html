@@ -50,21 +50,21 @@
 <script>
     // let color = '#FF0000';
 
-let color ='green';
+let color =1;
     function butColor() {
 
         document.getElementById('one').style.backgroundColor = '#898989';
         document.getElementById('two').style.backgroundColor = '#898989';
         document.getElementById('three').style.backgroundColor = '#898989';
-        if(color==="green"){
+        if(color===1){
             document.getElementById('one').style.backgroundColor = 'green';
-            color="orange";
-        }else if (color==="orange"){
+            color=2;
+        }else if (color===2){
             document.getElementById('two').style.backgroundColor = 'orange';
-            color="red";
+            color=3;
         }else {
             document.getElementById('three').style.backgroundColor = 'red';
-            color="green"
+            color=1
         }
 
     }
