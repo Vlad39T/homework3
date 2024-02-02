@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body {
+            background-color: #d7913c;
+        }
+
+        #block {
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 50px;
+            width: 300px;
+            height: 200px;
+            background-color: #d9d4d4;
+        }
+
+        #click {
+            border: none;
+            position: absolute;
+            right: 300px;
+            margin-top: -5px;
+            width: 20px;
+            height: 10px;
+            font-size: 4px;
+            font-family: Papyrus, serif;
+            box-sizing: border-box;
+            text-indent: -2px;
+            box-shadow: 0.5px 0.5px 0px hsl(0, 0%, 90%),
+            1px 1px 0px hsl(0, 0%, 60%),
+            1.5px 1.5px 0px hsl(0, 0%, 30%),
+            2px 2px 0px hsl(0, 0%, 10%);
+            transition: all 0.5s;
+        }
+        #click:hover{
+            background-color: hsl(0, 0%, 50%);
+            color: #fff;
+            box-shadow: none;
+        }
+        .colorB{
+            width: 60px;
+            height: 30px;
+            display: inline-block;
+            margin: 3px;
+        }
+    </style>
+</head>
+<body>
+<div id="block">
+    <button type="button" id="click" onclick="addBlock()">Add</button>
+</div>
+
+<script src="plus.js"></script>
+</body>
+</html>

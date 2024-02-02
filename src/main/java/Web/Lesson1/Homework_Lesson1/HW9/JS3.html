@@ -3,8 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <style>
+        body {
+            background-color: #913059;
+        }
+
+        .block {
+            background-color: #6c6a6a;
+            margin-left: 300px;
+            margin-top: 200px;
+            width: 80px;
+            height: 40px;
+            text-align: center;
+            padding: 10px;
+        }
+
+        #num {
+            display: block;
+            border: 1px solid black;
+            width: 15px;
+            height: 15px;
+            margin: 10px 30px;
+        }
+
+        button {
+            width: 20px;
+            height: 20px;
+            text-align: center;
+            display: inline-block;
+            background-color: rgba(255, 255, 255, 0);
+            border: none;
+        }
+
+        #cl1 {
+            position: relative;
+            bottom: 50px;
+            left: 7px;
+        }
+
+        #cl2 {
+            position: relative;
+            right: 15px;
+            bottom: 12px;
+        }
+    </style>
 </head>
 <body>
+<div class="block">
+    <p id="num"></p>
+    <button id="cl1" onclick="plus()">&#128070;</button>
+    <button id="cl2" onclick="minus()">&#128071;</button>
+</div>
+<script>
+    let num = 0
 
+    function plus() {
+        num += 1;
+        document.getElementById('num').textContent=num;
+    }
+
+    function minus() {
+        num -= 1;
+        document.getElementById('num').textContent=num;
+    }
+</script>
 </body>
 </html>
