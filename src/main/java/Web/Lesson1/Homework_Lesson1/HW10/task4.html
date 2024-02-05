@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<style>
+    .rating {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50px;
+        font-size: 20px;
+        width: 250px;
+        height: 35px;
+        background-color: #627ba4;
+        border-radius: 20px;
+        box-shadow: 0px 0px 40px 6px rgba(0, 0, 0, 0.75);
+        cursor: default;
+    }
+
+    span {
+        margin: 10px;
+    }
+
+    .star {
+        color: white;
+        margin: 0;
+    }
+    .hov{
+        color: yellow;
+        box-shadow: 1px 1px 30px 0px rgba(219,252,86,1);
+    }
+
+</style>
+<body>
+<div class="rating">
+    <span>Star rating:</span>
+    <span class="star" id="s1">&#9733;</span>
+    <span class="star" id="s2">&#9733;</span>
+    <span class="star" id="s3">&#9733;</span>
+    <span class="star" id="s4">&#9733;</span>
+    <span class="star" id="s5">&#9733;</span>
+</div>
+<script>
+    $(function() {
+        $('#s1')
+            .on('mouseenter', function() {
+                $(this).addClass("hov");
+            })
+            .on('mouseleave', function() {
+                $(this).removeClass("hov");
+            });
+        $('#s2')
+            .on('mouseenter', function() {
+                $('#s1 ,#s2').addClass("hov");
+            })
+            .on('mouseleave', function() {
+                $('#s1 ,#s2').removeClass("hov");
+            });
+        $('#s3')
+            .on('mouseenter', function() {
+                $('#s1 ,#s2,#s3').addClass("hov");
+            })
+            .on('mouseleave', function() {
+                $('#s1 ,#s2,#s3').removeClass("hov");
+            });
+        $('#s4')
+            .on('mouseenter', function() {
+                $('#s1 ,#s2,#s3,#s4').addClass("hov");
+            })
+            .on('mouseleave', function() {
+                $('#s1 ,#s2,#s3,#s4').removeClass("hov");
+            });
+        $('#s5')
+            .on('mouseenter', function() {
+                $('#s1 ,#s2,#s3,#s4,#s5').addClass("hov");
+            })
+            .on('mouseleave', function() {
+                $('#s1 ,#s2,#s3,#s4,#s5').removeClass("hov");
+            });
+    })
+</script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+        body {
+            background-color: #ffddb9;
+        }
+        #menu {
+            font-size: 14px;
+            font-family: "Segoe Print",serif;
+            background-color: #727272;
+            width: 170px;
+            height: 100%;
+            color: white;
+            overflow: hidden;
+            margin: -8px;
+        }
+
+        h3 {
+            color: white;
+            margin: 0px;
+            padding: 15px 10px;
+        }
+        img{
+            width: 60px;
+            height: 60px;
+        }
+        span{
+            white-space:nowrap;
+            vertical-align: 26px;
+        }
+        .img{
+            display: block;
+        }
+        .hidden span {
+            font-size: 0;
+            opacity: 0;
+            visibility: hidden;
+
+        }
+
+        #menu.hidden {
+            width: 75px;
+
+        }
+    </style>
+</head>
+<body>
+<div id="menu">
+    <h3>Menu</h3>
+    <div class="img">
+        <img src="edit.png" alt="edit"><span>Edit</span><br>
+        <img src="favorites.png" alt="favorites"><span>Favorites</span><br>
+        <img src="history.png" alt="history"><span>History</span><br>
+        <img src="security.png" alt="security"><span>Security</span><br>
+        <img src="settings.png" alt="settings"><span>Settings</span><br>
+    </div>
+</div>
+<script>
+    $(document).ready(function (){
+        $("#menu").click(function (){
+            $("#menu").toggleClass("hidden")
+        });
+    });
+</script>
+</body>
+</html>

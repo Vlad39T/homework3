@@ -1,4 +1,5 @@
 function addBlock() {
+
     let clBlock = document.createElement('div');
     clBlock.classList.add('colorB');
     clBlock.style.backgroundColor = randomColors();
